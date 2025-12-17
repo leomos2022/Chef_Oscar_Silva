@@ -1,34 +1,33 @@
-# Chef Oscar Monorepo
+# Chef Oscar Silva - Professional Website
 
-Este repositorio contiene el frontend (Next.js + TypeScript), backend (Node.js + Express + TypeScript) y un directorio `shared` para tipos/utilidades comunes.
+🌟 **Website Live**: https://leomos2022.github.io/Chef_Oscar_Silva/
 
-## Estructura
+Una aplicación web profesional y moderna para Chef Oscar Silva.
 
+## 🚀 Características
+
+- ✅ Diseño 100% Responsive
+- ✅ Sistema de Reservas Avanzado  
+- ✅ Chatbot AI Integrado
+- ✅ Galería Interactiva
+- ✅ Testimonios de Clientes
+- ✅ WhatsApp Flotante
+
+## 📦 Instalación
+
+```bash
+cd Chef_Oscar_Silva/frontend
+npm install
+npm run dev
 ```
-ChefOscar/
-  frontend/    # Next.js (SSR, TypeScript, TailwindCSS)
-  backend/     # Node.js + Express (TypeScript)
-  shared/      # Tipos y utilidades compartidas
-  README.md
-  .gitignore
-  docker-compose.yml
+
+## 🌐 Deployment
+
+```bash
+npm run build
+npm run deploy
 ```
 
-## Primeros pasos
+## 👨‍💻 Desarrollador
 
-1. Instala dependencias en cada paquete:
-   - `cd frontend && npm install`
-   - `cd ../backend && npm install`
-2. Ejecuta el frontend:
-   - `cd frontend && npm run dev`
-3. Ejecuta el backend:
-   - `cd backend && npx ts-node src/index.ts`
-
-## Requisitos
-- Node.js >= 18
-- npm >= 8
-
-## Despliegue sugerido
-- Frontend: Vercel
-- Backend: Render, Railway, Heroku
-- Base de datos: MongoDB Atlas
+**Leonardo Mosquera** - @leomos2022
