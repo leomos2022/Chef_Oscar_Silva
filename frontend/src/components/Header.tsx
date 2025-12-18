@@ -1,15 +1,26 @@
 "use client";
 import { useState } from "react";
 import { FaUser, FaShoppingCart, FaBars, FaTimes, FaWhatsapp, FaInstagram, FaFacebook } from "react-icons/fa";
+import { useLanguage } from "@/context/LanguageContext";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 interface HeaderProps {
-  menu: { key: string; label: string }[];
   active: string;
   setActive: (key: string) => void;
 }
 
-export default function Header({ menu, active, setActive }: HeaderProps) {
+export default function Header({ active, setActive }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { t } = useLanguage();
+
+  const menu = [
+    { key: 'home', label: t('menuHome') },
+    { key: 'about', label: t('menuAbout') },
+    { key: 'gallery', label: t('menuGallery') },
+    { key: 'services', label: t('menuServices') },
+    { key: 'testimonials', label: t('menuTestimonials') },
+    { key: 'contact', label: t('menuContact') },
+  ];
 
   const handleMenuClick = (key: string) => {
     setActive(key);
@@ -20,11 +31,11 @@ export default function Header({ menu, active, setActive }: HeaderProps) {
     <header className="w-full bg-white text-gray-900 shadow-md flex items-center justify-between px-4 md:px-8 py-4 md:py-6 sticky top-0 z-50 border-b border-gray-200">
       {/* Logo */}
       <div 
-        className="font-extrabold text-xl md:text-3xl tracking-wide uppercase text-[#1a4d3a] cursor-pointer" 
+        className="font-extrabold text-lg md:text-2xl tracking-wide uppercase text-[#1a4d3a] cursor-pointer mr-4 lg:mr-8" 
         onClick={() => setActive('home')}
         style={{ fontFamily: "'Montserrat', sans-serif", letterSpacing: '0.05em' }}
       >
-        Chef Oscar Silva
+        {t('headerLogo')}
       </div>
 
       {/* Desktop Navigation */}
@@ -45,8 +56,9 @@ export default function Header({ menu, active, setActive }: HeaderProps) {
         </ul>
       </nav>
 
-      {/* Desktop Icons */}
+      {/* Desktop Icons & Language Switcher */}
       <div className="hidden lg:flex items-center gap-4 xl:gap-6">
+        <LanguageSwitcher />
         <a href="#" className="text-xl xl:text-2xl hover:text-[#e95a2a] transition-colors" aria-label="User account"><FaUser /></a>
         <a href="#" className="text-xl xl:text-2xl hover:text-[#e95a2a] transition-colors" aria-label="Shopping cart"><FaShoppingCart /></a>
       </div>
@@ -107,6 +119,9 @@ export default function Header({ menu, active, setActive }: HeaderProps) {
 
           {/* Mobile Menu Footer */}
           <div className="p-6 border-t border-gray-200 space-y-4">
+            <div className="flex justify-center pb-4">
+              <LanguageSwitcher />
+            </div>
             <div className="flex justify-around text-2xl">
               <a href="#" className="text-gray-600 hover:text-[#e95a2a] transition-colors" aria-label="User"><FaUser /></a>
               <a href="#" className="text-gray-600 hover:text-[#e95a2a] transition-colors" aria-label="Cart"><FaShoppingCart /></a>

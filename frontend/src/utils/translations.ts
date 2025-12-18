@@ -1,0 +1,300 @@
+export const translations = {
+  es: {
+    // Header
+    headerLogo: "Chef Oscar Silva",
+    menuHome: "Inicio",
+    menuAbout: "Acerca de",
+    menuGallery: "Galería",
+    menuServices: "Servicios",
+    menuTestimonials: "Testimonios",
+    menuContact: "Contacto",
+    
+    // Home Section
+    homeBadge: "Chef Internacional Certificado",
+    homeTitle: "Chef Oscar Silva",
+    homeSubtitle: "Chef internacional graduado en el Art Institute de California, con más de 15 años de experiencia en alta cocina y eventos exclusivos.",
+    homeFeature1: "Chef Certificado",
+    homeFeature2: "Cenas Privadas",
+    homeFeature3: "Eventos Exclusivos",
+    homeCtaPrimary: "Reserva tu experiencia",
+    homeCtaSecondary: "Ver Menús",
+    homeScroll: "Desplazar",
+    
+    // About Section
+    aboutTitle: "Acerca de",
+    aboutText1: "Oscar Silva es un chef internacional con más de 15 años de experiencia en alta cocina y eventos exclusivos. Graduado del Art Institute de California, ha liderado proyectos culinarios prestigiosos y brindado experiencias únicas a clientes de todo el mundo.",
+    aboutText2: "Su pasión por la gastronomía y la excelencia lo ha llevado a colaborar con restaurantes reconocidos y especializarse en cenas privadas, eventos exclusivos y consultoría culinaria para la industria.",
+    aboutText3: "Disfruta de la experiencia de un chef privado en casa, personaliza tu menú y vive una velada inolvidable con Oscar Silva.",
+    aboutStat1: "Años de Experiencia",
+    aboutStat2: "Eventos Atendidos",
+    aboutStat3: "Satisfacción del Cliente",
+    aboutBadge1: "Excelencia",
+    aboutTitle1: "Formación y Pasión",
+    aboutText4: "Desde joven, Oscar mostró una pasión inigualable por la cocina, aprendiendo de los mejores y perfeccionando su técnica en cada paso de su carrera. Su dedicación a las artes culinarias le ha valido reconocimiento en varios continentes.",
+    aboutBadge2: "Experiencia Global",
+    aboutTitle2: "Experiencia Internacional",
+    aboutText5: "Ha trabajado en restaurantes internacionales de renombre, llevando la alta cocina a eventos exclusivos y experiencias privadas únicas. La versatilidad de Oscar le permite crear viajes culinarios memorables para cualquier ocasión.",
+    
+    // Gallery Section
+    galleryTitle: "Nuestra Galería Culinaria",
+    gallerySubtitle: "Explora nuestra colección de platos exquisitos y eventos memorables",
+    galleryFilterAll: "Todo",
+    galleryFilterMain: "Platos Principales",
+    galleryFilterAppetizers: "Entradas",
+    galleryFilterDesserts: "Postres",
+    galleryFilterEvents: "Eventos",
+    
+    // Services Section
+    servicesBadge: "Servicios Premium",
+    servicesTitle: "Experiencias Culinarias",
+    servicesSubtitle: "Elija entre nuestra selección exclusiva de experiencias de comida privada, cada una diseñada para crear recuerdos inolvidables",
+    servicesPopular: "Popular",
+    servicesPerPerson: "por persona",
+    servicesRequestBook: "Solicitar Reserva",
+    servicesStat1Title: "Tiempo de Respuesta",
+    servicesStat2Title: "Tasa de Satisfacción",
+    servicesStat3Title: "Eventos Atendidos",
+    
+    // Testimonials Section
+    testimonialsTitle: "Lo que Dicen Nuestros Clientes",
+    testimonialsSubtitle: "No solo confíe en nuestra palabra: escuche de quienes han experimentado la excelencia culinaria del Chef Oscar",
+    testimonialsStat1: "Clientes Felices",
+    testimonialsStat2: "Calificación Promedio",
+    testimonialsStat3: "Tasa de Satisfacción",
+    
+    // Contact Section
+    contactTitle: "Contáctanos",
+    contactSubtitle: "Contáctenos para opciones de menú, precios y disponibilidad",
+    contactFirstName: "Nombre",
+    contactLastName: "Apellido",
+    contactEmail: "Correo Electrónico",
+    contactPhone: "Teléfono",
+    contactMessage: "Mensaje",
+    contactMessagePlaceholder: "Cuéntenos sobre su evento, requisitos dietéticos o cualquier pregunta que tenga...",
+    contactSend: "Enviar Mensaje",
+    contactSending: "Enviando...",
+    contactSuccess: "¡Mensaje Enviado!",
+    contactSuccessText: "Nos pondremos en contacto en 24 horas.",
+    contactInfoTitle: "Información de Contacto",
+    contactPhoneLabel: "Teléfono",
+    contactEmailLabel: "Correo",
+    contactAreaLabel: "Área de Servicio",
+    contactArea: "Área Metropolitana de Los Ángeles",
+    contactSocialTitle: "Conéctate con Nosotros",
+    contactRequired: "requerido",
+    
+    // Footer
+    footerBrandText: "Llevando las mejores experiencias culinarias a tu mesa. Chef internacional certificado especializado en cenas privadas y eventos exclusivos.",
+    footerQuickLinks: "Enlaces Rápidos",
+    footerAbout: "Acerca de",
+    footerServices: "Servicios",
+    footerGallery: "Galería",
+    footerTestimonials: "Testimonios",
+    footerContact: "Contacto",
+    footerServicesTitle: "Servicios",
+    footerServicesDinner: "Cenas Privadas",
+    footerServicesClasses: "Clases de Cocina",
+    footerServicesWeddings: "Micro Bodas",
+    footerServicesCorporate: "Eventos Corporativos",
+    footerServicesConsulting: "Consultoría Culinaria",
+    footerContactTitle: "Contáctanos",
+    footerCopyright: "Todos los derechos reservados.",
+    footerMadeWith: "Sitio web creado con",
+    footerBy: "por",
+    footerPrivacy: "Política de Privacidad",
+    footerTerms: "Términos de Servicio",
+    
+    // WhatsApp
+    whatsappTooltip: "¡Chatea con nosotros en WhatsApp!",
+    whatsappMessage: "Hola Chef Oscar! Estoy interesado en reservar sus servicios.",
+    
+    // Chatbot
+    chatbotTitle: "Chef Oscar AI",
+    chatbotOnline: "En línea ahora",
+    chatbotWelcome: "¡Hola! Soy el asistente del Chef Oscar. ¿Cómo puedo ayudarte hoy?",
+    chatbotPlaceholder: "Escribe tu mensaje...",
+    chatbotQuick1: "Cuéntame sobre tus servicios",
+    chatbotQuick2: "¿Cuáles son tus precios?",
+    chatbotQuick3: "Verificar disponibilidad",
+    chatbotQuick4: "Solicitar cotización",
+    
+    // Booking Modal
+    bookingTitle: "Solicitar Reserva",
+    bookingName: "Nombre Completo",
+    bookingDate: "Fecha",
+    bookingTime: "Hora",
+    bookingGuests: "Invitados",
+    bookingGuestsSingle: "Invitado",
+    bookingGuestsPlural: "Invitados",
+    bookingSpecialRequests: "Solicitudes Especiales",
+    bookingSpecialPlaceholder: "Restricciones dietéticas, alergias, ocasiones especiales, etc.",
+    bookingSubmit: "Solicitar Reserva",
+    bookingProcessing: "Procesando...",
+    bookingSuccess: "¡Solicitud de Reserva Enviada!",
+    bookingSuccessText: "Nos pondremos en contacto pronto para confirmar su reserva.",
+    bookingDisclaimer: "Aún no se le cobrará. Confirmaremos la disponibilidad y nos pondremos en contacto en 24 horas.",
+    
+    // Loading Screen
+    loadingText: "Preparando tu experiencia culinaria...",
+    
+    // Errors
+    errorFirstName: "El nombre es requerido",
+    errorLastName: "El apellido es requerido",
+    errorEmail: "El correo electrónico es requerido",
+    errorEmailInvalid: "El correo electrónico no es válido",
+    errorPhone: "El teléfono es requerido",
+    errorPhoneInvalid: "El número de teléfono no es válido",
+    errorMessage: "El mensaje es requerido",
+  },
+  
+  en: {
+    // Header
+    headerLogo: "Chef Oscar Silva",
+    menuHome: "Home",
+    menuAbout: "About",
+    menuGallery: "Gallery",
+    menuServices: "Services",
+    menuTestimonials: "Testimonials",
+    menuContact: "Contact",
+    
+    // Home Section
+    homeBadge: "Certified International Chef",
+    homeTitle: "Chef Oscar Silva",
+    homeSubtitle: "International chef graduated from the Art Institute of California, with over 15 years of experience in haute cuisine and exclusive events.",
+    homeFeature1: "Certified Chef",
+    homeFeature2: "Private Dinners",
+    homeFeature3: "Exclusive Events",
+    homeCtaPrimary: "Book Your Experience",
+    homeCtaSecondary: "View Menus",
+    homeScroll: "Scroll",
+    
+    // About Section
+    aboutTitle: "About",
+    aboutText1: "Oscar Silva is an international chef with over 15 years of experience in haute cuisine and exclusive events. Graduated from the Art Institute of California, he has led prestigious culinary projects and provided unique experiences to clients worldwide.",
+    aboutText2: "His passion for gastronomy and excellence has led him to collaborate with renowned restaurants and specialize in private dinners, exclusive events, and culinary consulting for the industry.",
+    aboutText3: "Enjoy the experience of a private chef at home, customize your menu, and live an unforgettable evening with Oscar Silva.",
+    aboutStat1: "Years Experience",
+    aboutStat2: "Events Catered",
+    aboutStat3: "Client Satisfaction",
+    aboutBadge1: "Excellence",
+    aboutTitle1: "Training & Passion",
+    aboutText4: "From a young age, Oscar showed an unmatched passion for cooking, learning from the best and perfecting his technique at every step of his career. His dedication to culinary arts has earned him recognition across continents.",
+    aboutBadge2: "Global Experience",
+    aboutTitle2: "International Experience",
+    aboutText5: "He has worked in renowned international restaurants, bringing haute cuisine to exclusive events and unique private experiences. Oscar's versatility allows him to create memorable culinary journeys for any occasion.",
+    
+    // Gallery Section
+    galleryTitle: "Our Culinary Gallery",
+    gallerySubtitle: "Explore our collection of exquisite dishes and memorable events",
+    galleryFilterAll: "All",
+    galleryFilterMain: "Main Courses",
+    galleryFilterAppetizers: "Appetizers",
+    galleryFilterDesserts: "Desserts",
+    galleryFilterEvents: "Events",
+    
+    // Services Section
+    servicesBadge: "Premium Services",
+    servicesTitle: "Culinary Experiences",
+    servicesSubtitle: "Choose from our exclusive selection of private dining experiences, each crafted to create unforgettable memories",
+    servicesPopular: "Popular",
+    servicesPerPerson: "per person",
+    servicesRequestBook: "Request to Book",
+    servicesStat1Title: "Response Time",
+    servicesStat2Title: "Satisfaction Rate",
+    servicesStat3Title: "Events Catered",
+    
+    // Testimonials Section
+    testimonialsTitle: "What Our Clients Say",
+    testimonialsSubtitle: "Don't just take our word for it - hear from those who've experienced Chef Oscar's culinary excellence",
+    testimonialsStat1: "Happy Clients",
+    testimonialsStat2: "Average Rating",
+    testimonialsStat3: "Satisfaction Rate",
+    
+    // Contact Section
+    contactTitle: "Get In Touch",
+    contactSubtitle: "Contact us for menu options, pricing, and availability",
+    contactFirstName: "First Name",
+    contactLastName: "Last Name",
+    contactEmail: "Email",
+    contactPhone: "Phone",
+    contactMessage: "Message",
+    contactMessagePlaceholder: "Tell us about your event, dietary requirements, or any questions you have...",
+    contactSend: "Send Message",
+    contactSending: "Sending...",
+    contactSuccess: "Message Sent!",
+    contactSuccessText: "We'll get back to you within 24 hours.",
+    contactInfoTitle: "Contact Information",
+    contactPhoneLabel: "Phone",
+    contactEmailLabel: "Email",
+    contactAreaLabel: "Service Area",
+    contactArea: "Greater Los Angeles Area",
+    contactSocialTitle: "Connect With Us",
+    contactRequired: "required",
+    
+    // Footer
+    footerBrandText: "Bringing the finest culinary experiences to your table. Certified international chef specializing in private dinners and exclusive events.",
+    footerQuickLinks: "Quick Links",
+    footerAbout: "About Us",
+    footerServices: "Our Services",
+    footerGallery: "Gallery",
+    footerTestimonials: "Testimonials",
+    footerContact: "Contact",
+    footerServicesTitle: "Services",
+    footerServicesDinner: "Private Dinners",
+    footerServicesClasses: "Cooking Classes",
+    footerServicesWeddings: "Micro Weddings",
+    footerServicesCorporate: "Corporate Events",
+    footerServicesConsulting: "Culinary Consulting",
+    footerContactTitle: "Contact Us",
+    footerCopyright: "All rights reserved.",
+    footerMadeWith: "Website crafted with",
+    footerBy: "by",
+    footerPrivacy: "Privacy Policy",
+    footerTerms: "Terms of Service",
+    
+    // WhatsApp
+    whatsappTooltip: "Chat with us on WhatsApp!",
+    whatsappMessage: "Hi Chef Oscar! I'm interested in booking your services.",
+    
+    // Chatbot
+    chatbotTitle: "Chef Oscar AI",
+    chatbotOnline: "Online now",
+    chatbotWelcome: "Hello! I'm Chef Oscar's assistant. How can I help you today?",
+    chatbotPlaceholder: "Type your message...",
+    chatbotQuick1: "Tell me about your services",
+    chatbotQuick2: "What are your prices?",
+    chatbotQuick3: "Check availability",
+    chatbotQuick4: "Request a quote",
+    
+    // Booking Modal
+    bookingTitle: "Request to Book",
+    bookingName: "Full Name",
+    bookingDate: "Date",
+    bookingTime: "Time",
+    bookingGuests: "Guests",
+    bookingGuestsSingle: "Guest",
+    bookingGuestsPlural: "Guests",
+    bookingSpecialRequests: "Special Requests",
+    bookingSpecialPlaceholder: "Dietary restrictions, allergies, special occasions, etc.",
+    bookingSubmit: "Request to Book",
+    bookingProcessing: "Processing...",
+    bookingSuccess: "Booking Request Sent!",
+    bookingSuccessText: "We'll contact you soon to confirm your reservation.",
+    bookingDisclaimer: "You won't be charged yet. We'll confirm availability and get back to you within 24 hours.",
+    
+    // Loading Screen
+    loadingText: "Preparing your culinary experience...",
+    
+    // Errors
+    errorFirstName: "First name is required",
+    errorLastName: "Last name is required",
+    errorEmail: "Email is required",
+    errorEmailInvalid: "Email is invalid",
+    errorPhone: "Phone is required",
+    errorPhoneInvalid: "Phone number is invalid",
+    errorMessage: "Message is required",
+  }
+};
+
+export type Language = 'es' | 'en';
+export type TranslationKey = keyof typeof translations.es;

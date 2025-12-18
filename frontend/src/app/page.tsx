@@ -13,15 +13,6 @@ import WhatsAppFloat from "../components/WhatsAppFloat";
 import ChatBot from "../components/ChatBot";
 import LoadingScreen from "../components/LoadingScreen";
 
-const MENU = [
-  { key: "home", label: "Home" },
-  { key: "about", label: "About" },
-  { key: "gallery", label: "Gallery" },
-  { key: "bookOnline", label: "Services" },
-  { key: "testimonials", label: "Testimonials" },
-  { key: "contact", label: "Contact" },
-];
-
 export default function Home() {
   const [active, setActive] = useState("home");
 
@@ -58,13 +49,13 @@ export default function Home() {
     <>
       <LoadingScreen />
       <div className="min-h-screen flex flex-col text-gray-900 font-sans" style={{ background: getBgColor() }}>
-        <Header menu={MENU} active={active} setActive={setActive} />
+        <Header active={active} setActive={setActive} />
         
         <main className="flex-1 flex flex-col items-center">
           {active === "home" && <HomeSection />}
           {active === "about" && <AboutSection />}
           {active === "gallery" && <GallerySection />}
-          {active === "bookOnline" && <BookOnlineSection />}
+          {active === "services" && <BookOnlineSection />}
           {active === "testimonials" && <TestimonialsSection />}
           {active === "contact" && <ContactSection />}
         </main>

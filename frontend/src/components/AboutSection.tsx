@@ -1,9 +1,11 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function AboutSection() {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -32,17 +34,17 @@ export default function AboutSection() {
       }`}>
         {/* Texto */}
         <div className="flex-1 flex flex-col justify-center">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold mb-2 text-white">About</h2>
+          <h2 className="text-4xl md:text-5xl font-serif font-bold mb-2 text-white">{t('aboutTitle')}</h2>
           <div className="w-16 h-1 bg-[#e95a2a] mb-6 md:mb-8 animate-slide-in" />
           <div className="space-y-4 md:space-y-6 text-base md:text-lg leading-relaxed">
             <p className="animate-fade-in-up">
-              Oscar Silva is an international chef with over <b className="text-[#e95a2a]">15 years of experience</b> in haute cuisine and exclusive events. Graduated from the <b className="text-[#e95a2a]">Art Institute of California</b>, he has led prestigious culinary projects and provided unique experiences to clients worldwide.
+              {t('aboutText1')}
             </p>
             <p className="animate-fade-in-up animation-delay-200">
-              His passion for gastronomy and excellence has led him to collaborate with renowned restaurants and specialize in private dinners, exclusive events, and culinary consulting for the industry.
+              {t('aboutText2')}
             </p>
             <p className="animate-fade-in-up animation-delay-400">
-              Enjoy the experience of a private chef at home, customize your menu, and live an unforgettable evening with Oscar Silva.
+              {t('aboutText3')}
             </p>
           </div>
 
@@ -50,15 +52,15 @@ export default function AboutSection() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mt-8 animate-fade-in-up animation-delay-600">
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-[#e95a2a]">15+</div>
-              <div className="text-xs md:text-sm text-gray-400 mt-1">Years Experience</div>
+              <div className="text-xs md:text-sm text-gray-400 mt-1">{t('aboutStat1')}</div>
             </div>
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-[#e95a2a]">500+</div>
-              <div className="text-xs md:text-sm text-gray-400 mt-1">Events Catered</div>
+              <div className="text-xs md:text-sm text-gray-400 mt-1">{t('aboutStat2')}</div>
             </div>
             <div className="text-center col-span-2 md:col-span-1">
               <div className="text-3xl md:text-4xl font-bold text-[#e95a2a]">100%</div>
-              <div className="text-xs md:text-sm text-gray-400 mt-1">Client Satisfaction</div>
+              <div className="text-xs md:text-sm text-gray-400 mt-1">{t('aboutStat3')}</div>
             </div>
           </div>
         </div>
@@ -96,11 +98,11 @@ export default function AboutSection() {
           </div>
           <div className="flex-1 text-base md:text-lg leading-relaxed">
             <div className="inline-block bg-[#e95a2a] text-white px-4 py-1 rounded-full text-sm font-semibold mb-4">
-              Excellence
+              {t('aboutBadge1')}
             </div>
-            <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">Training & Passion</h3>
+            <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">{t('aboutTitle1')}</h3>
             <p className="text-gray-300">
-              From a young age, Oscar showed an unmatched passion for cooking, learning from the best and perfecting his technique at every step of his career. His dedication to culinary arts has earned him recognition across continents.
+              {t('aboutText4')}
             </p>
           </div>
         </div>
@@ -119,11 +121,11 @@ export default function AboutSection() {
           </div>
           <div className="flex-1 text-base md:text-lg leading-relaxed">
             <div className="inline-block bg-[#e95a2a] text-white px-4 py-1 rounded-full text-sm font-semibold mb-4">
-              Global Experience
+              {t('aboutBadge2')}
             </div>
-            <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">International Experience</h3>
+            <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">{t('aboutTitle2')}</h3>
             <p className="text-gray-300">
-              He has worked in renowned international restaurants, bringing haute cuisine to exclusive events and unique private experiences. Oscar's versatility allows him to create memorable culinary journeys for any occasion.
+              {t('aboutText5')}
             </p>
           </div>
         </div>
