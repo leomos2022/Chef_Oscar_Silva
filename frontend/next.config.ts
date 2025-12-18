@@ -5,7 +5,6 @@ const isProd = process.env.NODE_ENV === 'production';
 const nextConfig: NextConfig = {
   output: 'export',
   basePath: isProd ? '/Chef_Oscar_Silva' : '',
-  assetPrefix: isProd ? '/Chef_Oscar_Silva/' : '',
   images: {
     unoptimized: true,
   },
@@ -15,7 +14,6 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  // Disable trailing slash to avoid routing issues
   trailingSlash: true,
 };
 
