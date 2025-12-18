@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaInstagram, FaFacebook, FaWhatsapp, FaPaperPlane, FaCheckCircle } from "react-icons/fa";
+import { getAssetPath } from "@/utils/assetPath";
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -277,7 +278,7 @@ export default function ContactSection() {
             {/* Decorative Image */}
             <div className="hidden lg:block mt-8">
               <img 
-                src="/contact-table.jpg" 
+                src={getAssetPath('/contact-table.jpg')} 
                 alt="Elegant dining setup" 
                 className="w-full h-48 object-cover rounded-lg shadow-lg"
               />

@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { useLanguage } from "@/context/LanguageContext";
+import { getAssetPath } from "@/utils/assetPath";
 
 export default function HomeSection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -15,7 +16,7 @@ export default function HomeSection() {
       {/* Background Image with Overlay - Lighter for better visibility */}
       <div className="absolute inset-0 bg-gradient-to-br from-black/40 via-black/30 to-transparent z-10" />
       <img
-        src="/oscarchef.jpg"
+        src={getAssetPath('/oscarchef.jpg')}
         alt="Chef Oscar Silva en cocina"
         className="absolute inset-0 w-full h-full object-cover object-center"
         style={{ 

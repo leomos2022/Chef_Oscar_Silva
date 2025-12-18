@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import { useLanguage } from "@/context/LanguageContext";
+import { getAssetPath } from "@/utils/assetPath";
 
 export default function AboutSection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -70,7 +71,7 @@ export default function AboutSection() {
           <div className="relative group">
             <div className="w-64 h-64 md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] rounded-full overflow-hidden border-4 border-[#e95a2a] shadow-2xl shadow-[#e95a2a]/20 bg-gray-900 flex items-center justify-center transition-transform duration-500 group-hover:scale-105">
               <img
-                src="/chef-oscar-silva.jpg"
+                src={getAssetPath('/chef-oscar-silva.jpg')}
                 alt="Chef Oscar Silva"
                 className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
                 style={{ objectPosition: 'center top' }}
@@ -91,7 +92,7 @@ export default function AboutSection() {
           <div className="flex-1 relative group">
             <div className="absolute inset-0 bg-[#e95a2a]/20 rounded-lg transform rotate-3 group-hover:rotate-6 transition-transform duration-300" />
             <img
-              src="/foto1.jpg"
+              src={getAssetPath('/foto1.jpg')}
               alt="Oscar Silva cooking"
               className="relative w-full rounded-lg shadow-2xl transform group-hover:scale-105 transition-transform duration-300"
             />
@@ -114,7 +115,7 @@ export default function AboutSection() {
           <div className="flex-1 relative group">
             <div className="absolute inset-0 bg-[#e95a2a]/20 rounded-lg transform -rotate-3 group-hover:-rotate-6 transition-transform duration-300" />
             <img
-              src="/foto2.jpg"
+              src={getAssetPath('/foto2.jpg')}
               alt="Private event"
               className="relative w-full rounded-lg shadow-2xl transform group-hover:scale-105 transition-transform duration-300"
             />
